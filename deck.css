@@ -45,27 +45,27 @@ body{scroll-snap-type:y mandatory}
 .section>.slide strong{color:#fff;font-weight:850;background:linear-gradient(transparent 58%,rgba(57,185,255,.34) 58%);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .section>.slide>.prose,.section>.slide>.bullet-band,.section>.slide>.live-links{scrollbar-width:none}
 .section>.slide>.prose::-webkit-scrollbar,.section>.slide>.bullet-band::-webkit-scrollbar,.section>.slide>.live-links::-webkit-scrollbar{display:none}
-.hero>.hero-bg{transform:scale(1);animation:none;background:linear-gradient(135deg,rgba(5,8,13,.42),rgba(17,26,39,.42)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
+.hero>.hero-bg{transform:scale(1);animation:none;background:linear-gradient(135deg,rgba(5,8,13,.42),rgba(17,26,39,.42)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
 
 /* 文档前部的赛场/合照作为后续信息页的氛围背景；兵种页不借用其它兵种图片。 */
-#robomaster>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.7)),url('assets/image.png') center/cover}
-#robomaster>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
-#team>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.72)),url('assets/3.jpg') center/cover}
-#roles>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.jpg') center/cover}
-#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/1.jpg') center/cover}
-#roles>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/3.jpg') center/cover}
+#robomaster>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.7)),url('assets/image.webp') center/cover}
+#robomaster>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
+#team>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.72)),url('assets/3.webp') center/cover}
+#roles>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.webp') center/cover}
+#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/1.webp') center/cover}
+#roles>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/3.webp') center/cover}
 #roles>.slide:nth-child(11){background:#0b0f13}
-#roles>.slide:nth-child(12){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/3.jpg') center/cover}
-#roles>.slide:nth-child(14){background:linear-gradient(90deg,rgba(7,11,16,.9),rgba(7,11,16,.58)),url('assets/image 3.png') center/cover}
-#roles>.slide:nth-child(15){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.jpg') center/cover}
-#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.72)),url('assets/3.jpg') center/cover}
-#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.jpg') center/cover}
-#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/1.jpg') center/cover}
-#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
-#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.74)),url('assets/3.jpg') center/cover}
-#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/10.jpg') center/cover}
-#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.74)),url('assets/3.jpg') center/cover}
-#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/10.jpg') center/cover}
+#roles>.slide:nth-child(12){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/3.webp') center/cover}
+#roles>.slide:nth-child(14){background:linear-gradient(90deg,rgba(7,11,16,.9),rgba(7,11,16,.58)),url('assets/image 3.webp') center/cover}
+#roles>.slide:nth-child(15){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.72)),url('assets/3.webp') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.7)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/1.webp') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.74)),url('assets/3.webp') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.74)),url('assets/3.webp') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.7)),url('assets/10.webp') center/cover}
 #tech>.slide:nth-child(4),#tech>.slide:nth-child(5){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto 1fr;align-content:center;column-gap:4.5vw;row-gap:18px}
 #tech>.slide:nth-child(4)>.subsection-head,#tech>.slide:nth-child(5)>.subsection-head{grid-column:1/-1;margin:0 0 4px}
 #tech>.slide:nth-child(4)>.prose,#tech>.slide:nth-child(5)>.prose{max-width:none;max-height:none;overflow:visible;font-size:clamp(14px,1.12vw,17px);line-height:1.62;columns:1}
@@ -77,9 +77,9 @@ body{scroll-snap-type:y mandatory}
 #tech>.slide:nth-child(4)>.subsection-head h3{font-size:clamp(42px,5vw,68px)}
 #tech>.slide:nth-child(4)>.subsection-head .kicker{margin-bottom:6px}
 #tech>.slide:nth-child(4)>.prose{font-size:clamp(11.5px,.95vw,14px);line-height:1.34}
-#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.68)),url('assets/3.jpg') center/cover}
-#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.72)),url('assets/10.jpg') center/cover}
-#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.72)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
+#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.68)),url('assets/3.webp') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.72)),url('assets/10.webp') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.72)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
 #robomaster>.slide:nth-child(3)>.text-panel{margin-top:48px;padding-top:24px;font-size:14px;line-height:1.75}
 .role-inline-image{margin:14px 0;max-width:260px;height:110px;overflow:hidden;background:#111}
 .role-inline-image img{display:block;width:100%;height:100%;object-fit:contain}
@@ -221,18 +221,18 @@ body{scroll-snap-type:y mandatory}
 }
 
 /* 背景轮换：复用现有高质量素材，减少非兵种页面反复使用同一张队伍照片。 */
-#robomaster>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 10.png') center/cover}
-#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.66)),url('assets/image 1.png') center/cover}
-#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
-#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 9.png') center/cover}
-#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.66)),url('assets/image 8.png') center/cover}
-#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 2.png') center/cover}
-#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 7.png') center/cover}
-#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
-#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 6.png') center/cover}
-#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image.png') center/cover}
-#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.68)),url('assets/image 5.png') center/cover}
-#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 1.png') center/cover}
+#robomaster>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 10.webp') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.66)),url('assets/image 1.webp') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 9.webp') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.66)),url('assets/image 8.webp') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 2.webp') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 7.webp') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 6.webp') center/cover}
+#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image.webp') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.68)),url('assets/image 5.webp') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 1.webp') center/cover}
 
 /* 组织架构：右侧两张结构图增加可视面积，同时保留左侧标题和底部职责说明。 */
 #tech>.slide:nth-child(1){grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);column-gap:3vw}
@@ -247,10 +247,10 @@ body{scroll-snap-type:y mandatory}
 
 /* 允许的背景素材收敛到指定图片；其余大图只作为前景内容图使用。 */
 #robomaster>.slide:nth-child(1){background:#070b10}
-#robomaster>.slide:nth-child(2){display:block;background:linear-gradient(90deg,rgba(7,11,16,.24),rgba(7,11,16,.18)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
-#robomaster>.slide:nth-child(3){display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,11,16,.88),rgba(7,11,16,.42)),url('assets/image 5.png') center/cover}
-#robomaster>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;column-gap:4vw;background:linear-gradient(90deg,rgba(7,11,16,.92),rgba(7,11,16,.48)),url('assets/image 10.png') center/cover}
-#robomaster>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image.png') center/cover}
+#robomaster>.slide:nth-child(2){display:block;background:linear-gradient(90deg,rgba(7,11,16,.24),rgba(7,11,16,.18)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
+#robomaster>.slide:nth-child(3){display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,11,16,.88),rgba(7,11,16,.42)),url('assets/image 5.webp') center/cover}
+#robomaster>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;column-gap:4vw;background:linear-gradient(90deg,rgba(7,11,16,.92),rgba(7,11,16,.48)),url('assets/image 10.webp') center/cover}
+#robomaster>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image.webp') center/cover}
 .intro-images.two{grid-template-columns:repeat(2,minmax(0,1fr));height:48svh;max-height:48svh}
 #robomaster>.slide:nth-child(3)>.intro-images{width:100%;height:48svh;max-height:48svh}
 #robomaster>.slide:nth-child(4)>.intro-images{grid-column:2;grid-row:1;height:42svh;max-height:42svh}
@@ -265,18 +265,18 @@ body{scroll-snap-type:y mandatory}
 #tech>.slide:nth-child(2)>.bullet-band{width:100%;max-height:30svh;margin:0;padding:14px 0;overflow:hidden}
 
 /* 技术组、宣运、分享与资料页统一使用指定背景素材。 */
-#tech>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/3.jpg') center/cover}
-#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
-#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
-#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/10.jpg') center/cover}
-#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 3.png') center/cover}
-#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 1.png') center/cover}
-#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/10.jpg') center/cover}
-#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 5.png') center/cover}
-#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
-#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 3.png') center/cover}
-#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
-#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 1.png') center/cover}
+#tech>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/3.webp') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.webp') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 3.webp') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 1.webp') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.webp') center/cover}
+#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 3.webp') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 5.webp') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 1.webp') center/cover}
 
 @media(max-width:800px){
   #robomaster>.slide:nth-child(2){padding:88px 7vw 44px}
@@ -306,10 +306,10 @@ body{scroll-snap-type:y mandatory}
 #tech>.slide:nth-child(9){display:block;padding-left:14vw;padding-right:14vw}
 #tech>.slide:nth-child(9)>.subsection-head{margin:0 0 32px}
 #tech>.slide:nth-child(9)>.prose{max-width:1180px;columns:1;max-height:calc(100svh - 250px);overflow:hidden}
-#tech>.slide:nth-child(10){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
+#tech>.slide:nth-child(10){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.webp') center/cover}
 #tech>.slide:nth-child(11)>.content-image{height:min(38svh,340px)}
 #tech>.slide:nth-child(11)>.prose{max-height:calc(100svh - 260px);overflow:hidden}
-#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.68)),url('assets/image 1.png') center/cover}
+#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.68)),url('assets/image 1.webp') center/cover}
 
 @media(max-width:800px){
   #tech>.slide:nth-child(6){display:flex;padding:88px 7vw 44px;gap:18px}
