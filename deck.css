@@ -220,6 +220,31 @@ body{scroll-snap-type:y mandatory}
   #tech>.slide:nth-child(8)>.prose{max-height:calc(100svh - 190px);overflow:hidden}
 }
 
+/* 背景轮换：复用现有高质量素材，减少非兵种页面反复使用同一张队伍照片。 */
+#robomaster>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 10.png') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.66)),url('assets/image 1.png') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 9.png') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.66)),url('assets/image 8.png') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 2.png') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.62)),url('assets/image 7.png') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 6.png') center/cover}
+#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image.png') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.68)),url('assets/image 5.png') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.68)),url('assets/image 1.png') center/cover}
+
+/* 组织架构：右侧两张结构图增加可视面积，同时保留左侧标题和底部职责说明。 */
+#tech>.slide:nth-child(1){grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);column-gap:3vw}
+#tech>.slide:nth-child(1)>.org.org-stack{max-height:64svh}
+#tech>.slide:nth-child(1)>.org.org-stack img{max-height:34svh}
+
+@media(max-width:800px){
+  #tech>.slide:nth-child(1){grid-template-columns:1fr}
+  #tech>.slide:nth-child(1)>.org.org-stack{max-height:32svh}
+  #tech>.slide:nth-child(1)>.org.org-stack img{max-height:15svh}
+}
+
 /* 工程页沿用步兵页的多图卡片：两张工程图并列，右侧保持统一视觉重量。 */
 #roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 #roles .role-images.two img{height:min(25svh,240px)}
