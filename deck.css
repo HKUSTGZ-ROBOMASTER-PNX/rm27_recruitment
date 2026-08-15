@@ -83,8 +83,13 @@ body{scroll-snap-type:y mandatory}
 #robomaster>.slide:nth-child(3)>.text-panel{margin-top:48px;padding-top:24px;font-size:14px;line-height:1.75}
 .role-inline-image{margin:14px 0;max-width:260px;height:110px;overflow:hidden;background:#111}
 .role-inline-image img{display:block;width:100%;height:100%;object-fit:contain}
+.role-inline-image.large{max-width:440px;height:175px}
 .operator-banner{position:relative;z-index:1;width:100%;height:20svh;margin:-8px 0 22px;overflow:hidden}
 .operator-banner img{display:block;width:100%;height:100%;object-fit:contain;background:rgba(238,242,244,.96)}
+.mechanical-image,.content-image{position:relative;z-index:1;width:100%;overflow:hidden}
+.mechanical-image{max-height:28svh;margin:0 auto}
+.mechanical-image img,.content-image img{display:block;width:100%;height:100%;object-fit:contain;background:rgba(238,242,244,.96)}
+.content-image{height:24svh;max-width:1000px;margin:0 auto}
 
 /* 新素材对应的技术组版式：组织架构保留两张图，机械/硬件/电控长文案采用稳定双栏。 */
 .tech .org-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-height:46svh;overflow:hidden}
