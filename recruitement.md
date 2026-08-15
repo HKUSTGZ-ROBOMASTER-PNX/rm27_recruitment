@@ -16,13 +16,13 @@
 
 ![image\.png](assets/image.png)
 
-![image\.png](assets/image%206.png)
+![image\.png](assets/image%203.png)
 
 ![image\.png](assets/image%201.png)
 
-![image\.png](assets/image%205.png)
-
 ![image\.png](assets/image%202.png)
+
+![image\.png](assets/image%207.png)
 
 - 由大疆发起，分RMUL高校联盟赛，RMUC超级对抗赛，RMUA人工智能挑战赛，我们主要参加RMUL和RMUC
 
@@ -54,16 +54,6 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 - 已经参与3届高校联盟赛和2届超级对抗赛
 
-- RoboMaster2026机甲大师超级对抗赛区域赛\(北部赛区\)二等奖
-
-- RoboMaster2026机甲大师高校联盟赛\(四川站\)3v3对抗赛三等奖
-
-- RoboMaster2025机甲大师超级对抗赛·区域赛\(南部赛区\)二等奖
-
-- RoboMaster2025机甲大师高校联盟赛\(广西站\)工程挑战赛三等奖
-
-- RoboMaster2025机甲大师高校联盟赛\(广西站\)3v3对抗赛三等奖
-
 # 兵种组介绍
 
 [击杀集锦](https://www.bilibili.com/video/BV18rMc6kEhY/?vd_source=fabd9fb4ab8b4659eaecc77d039b749a)
@@ -89,6 +79,8 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 双臂工程
 
 [梦回救援工程](https://www.bilibili.com/video/BV12hP1zYEUt/?vd_source=fabd9fb4ab8b4659eaecc77d039b749a)
+
+![双臂\.png](assets/双臂.png)
 
 单臂工程
 
@@ -164,7 +156,7 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 - 能做出比官方客户端UI更精美的控件与效果
 
-![image\.png](assets/image%204.png)
+![image\.png](assets/image%208.png)
 
 
 
@@ -187,6 +179,8 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 - 撞击前哨、基地
 
 ## 操作手阵容
+
+![image\.png](assets/image%206.png)
 
 ### 重装操作手 × 1
 
@@ -214,7 +208,11 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 ## 组织架构
 
-![image\.png](assets/image%203.png)
+![image\.png](assets/image%204.png)
+
+
+
+![filename\.png](assets/filename.png)
 
 - 队长 \& 项管：人员管理、进度跟踪、整体决策
 
@@ -226,9 +224,39 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 ## 机械组
 
+“所有的代码都需要躯体去执行，所有的战术都需要坚甲去承载。在机械组，我们不讨论如果，我们只负责创造。”
 
+简单来说，我们是整个战队的基石。
+
+我们会将脑海里面天马行空的创造力，变成摆在眼前的，看上去令人叹为观止的钢铁巨兽。
+
+我们的工作，包括但不限于：
+
+1、玩转solidworks等建模软件，在虚拟环境中建模出机器人的躯壳，微调各种参数，来让整体的机械结构强度更加可靠，让各种传动、轴系设计更加合理
+
+2、在物理极限之间博弈，我们会运用到例如solidworks simulation等去进行减重和强度的博弈，甚至会去到风洞实验室、材料实验室进行精密的测试
+
+3、亲自上手硬核制造，我们将会3D打印，CNC加工，车铣钳焊，水切割，激光切割，亲自感受从0到1的设计制造过程
+
+4、要会基本的硬件知识，也就是熟悉各种线材，电机的参数，在装完车之后帮忙布线，甚至帮忙焊一些简单的线材和板子
+
+
+
+我们在寻找怎样的“头号玩家”？
+
+不需要你现在就是全知全能的大神，但是如果你对于机械结构有天然的痴迷，脑洞打开，能够想出很多天马行空的想法，极致的行动派，动手能力强，那么机械组欢迎你的加入！
+
+
+
+当然如果是纯小白也是完全不用担心，要相信我们机械组的培训，我们会把你们培养成老练的机械人
 
 ## 硬件组
+
+
+
+![filename\.jpg](assets/filename.jpg)
+
+
 
 硬件组究竟是干嘛的？
 
@@ -268,11 +296,11 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 ## 电控组
 
+
+
+![filename\.png](assets/filename%201.png)
+
 电控组，也会被称为嵌入式组
-
-**嵌入式系统**（Embedded system），是一种嵌入机械或电气系统内部、具有专一功能和[实时计算](https://zh.wikipedia.org/wiki/%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97)性能的[计算机](https://zh.wikipedia.org/wiki/%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA)系统。
-
-——维基百科
 
 我们的工作可以理解为搭建硬件与算法的桥梁。主要工作是通过**单片机**程序的编写，控制机器人实现基本的运动、基本的通信，包括驱动电机、运动与姿态解算、与裁判系统进行通信、机器人各个状态控制等。
 
@@ -370,7 +398,7 @@ RoboMaster 承载了大疆对于未来人才的想象和期望，致力于培养
 
 # 大致安排
 
-![image\.png](assets/image%207.png)
+![image\.png](assets/image%205.png)
 
 # 老队员分享
 

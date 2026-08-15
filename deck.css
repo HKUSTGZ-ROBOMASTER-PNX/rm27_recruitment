@@ -1,5 +1,5 @@
 /* 演示页分页层：每个逻辑内容块固定为一页，标题、正文与对应图片不会被拆到相邻页。 */
-html{scroll-snap-type:y mandatory;scroll-padding-top:0}
+html{scroll-snap-type:y mandatory;scroll-padding-top:0;overflow-x:hidden}
 body{scroll-snap-type:y mandatory}
 .section.snap{min-height:0;padding:0;overflow:visible}
 .section>.slide{position:relative;min-height:100svh;height:100svh;padding:clamp(92px,10vh,130px) 9vw clamp(56px,8vh,100px);overflow:hidden;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center}
@@ -22,6 +22,7 @@ body{scroll-snap-type:y mandatory}
 .tech .org img{max-height:48svh;object-fit:contain}
 .references .live-links{font-size:clamp(11px,1.1vw,14px)}
 .section>.slide>.team-gallery{height:48svh}.section>.slide>.team-gallery figure,.section>.slide>.team-gallery figure:first-child,.section>.slide>.team-gallery figure:nth-child(2),.section>.slide>.team-gallery figure:nth-child(3){height:100%}.section>.slide>.schedule-image img{max-height:52svh}
+.section>.slide>*{min-width:0}
 #robomaster>.slide:first-child{justify-content:flex-start;padding-top:clamp(78px,9vh,105px);padding-bottom:24px}#robomaster>.slide:first-child>.section-head{margin-bottom:16px}#robomaster>.slide:first-child>.intro-links{margin-bottom:14px}#robomaster>.slide:first-child>.image-strip{grid-template-rows:13svh 8svh;max-height:22svh;margin:0}
 @media(max-width:800px){html{scroll-snap-type:y proximity}.section>.slide{height:100svh;min-height:100svh;padding:88px 7vw 44px;justify-content:flex-start}.section>.slide>.section-head{margin-bottom:25px}.section>.slide>.image-strip{max-height:42svh}.section>.slide>.team-gallery{max-height:40svh}.role-feature .role-copy ul{max-height:26svh}.role-feature .role-image{height:30svh}.role-images img{height:13svh}.new-role-grid{max-height:72svh}.new-role .question-cube{height:18svh}.operator-grid{max-height:70svh}.tech .org,.tech .org img{max-height:34svh}.section>.slide>.prose,.section>.slide>.bullet-band,.section>.slide>.live-links{max-height:calc(100svh - 150px)}}
 
@@ -80,5 +81,45 @@ body{scroll-snap-type:y mandatory}
 #references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.72)),url('assets/10.jpg') center/cover}
 #references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.98),rgba(7,11,16,.72)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
 #robomaster>.slide:nth-child(3)>.text-panel{margin-top:48px;padding-top:24px;font-size:14px;line-height:1.75}
+.role-inline-image{margin:14px 0;max-width:260px;height:110px;overflow:hidden;background:#111}
+.role-inline-image img{display:block;width:100%;height:100%;object-fit:contain}
+.operator-banner{position:relative;z-index:1;width:100%;height:20svh;margin:-8px 0 22px;overflow:hidden}
+.operator-banner img{display:block;width:100%;height:100%;object-fit:contain;background:rgba(238,242,244,.96)}
+
+/* 新素材对应的技术组版式：组织架构保留两张图，机械/硬件/电控长文案采用稳定双栏。 */
+.tech .org-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-height:46svh;overflow:hidden}
+.tech .org-stack img{width:100%;height:100%;max-height:22svh;object-fit:contain;background:#fff}
+.hardware-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:4vw;align-items:center;width:100%;min-width:0}
+.hardware-layout.reverse-layout{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.hardware-image{position:relative;z-index:1;display:grid;place-items:center;min-height:0}
+.hardware-image img{display:block;width:100%;max-height:42svh;object-fit:contain;background:rgba(238,242,244,.96)}
+.prose ol{margin:0 0 25px;padding-left:1.65em}
+.prose ol li{margin:.6em 0;line-height:1.6}
+#tech>.slide:nth-child(2)>.prose,#tech>.slide:nth-child(3)>.prose,#tech>.slide:nth-child(5)>.prose{columns:2;column-gap:4vw;column-fill:balance;max-height:calc(100svh - 220px);overflow:hidden;font-size:clamp(13px,1.05vw,16px);line-height:1.5}
+#tech>.slide:nth-child(2)>.prose>*,#tech>.slide:nth-child(3)>.prose>*,#tech>.slide:nth-child(5)>.prose>*{break-inside:avoid}
+#tech>.slide:nth-child(3) .hardware-layout>.prose{columns:2;max-height:40svh;overflow:hidden;font-size:clamp(12px,.95vw,15px);line-height:1.42}
+#tech>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);grid-template-rows:auto 1fr;align-content:center;column-gap:4vw;row-gap:18px}
+#tech>.slide:nth-child(4)>.subsection-head{grid-column:1/-1;margin:0}
+#tech>.slide:nth-child(4)>.hardware-layout{grid-column:1;display:flex;flex-direction:column;gap:14px;align-items:stretch;min-width:0}
+#tech>.slide:nth-child(4)>.hardware-layout>.prose{columns:2;max-height:39svh;overflow:hidden;font-size:clamp(11.5px,.9vw,14px);line-height:1.38}
+#tech>.slide:nth-child(4)>.hardware-layout>.hardware-image img{max-height:13svh}
+#tech>.slide:nth-child(4)>.prose{grid-column:2;grid-row:2;columns:1;max-height:calc(100svh - 220px);overflow:hidden;font-size:clamp(12px,.95vw,15px);line-height:1.45}
+#tech>.slide:nth-child(6),#tech>.slide:nth-child(7){align-content:center}
+#tech>.slide:nth-child(4){display:flex;flex-direction:column;justify-content:center;gap:18px}
+#tech>.slide:nth-child(4)>.subsection-head{margin:0}
+#tech>.slide:nth-child(4)>.hardware-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:4vw;align-items:center}
+#tech>.slide:nth-child(4)>.hardware-layout>.prose{columns:2;max-height:40svh;overflow:hidden;font-size:clamp(12px,.95vw,15px);line-height:1.42}
+#tech>.slide:nth-child(4)>.hardware-layout>.hardware-image img{max-height:38svh}
+#tech>.slide:nth-child(5){display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.95fr);grid-template-rows:auto 1fr;align-content:center;column-gap:4vw;row-gap:18px}
+#tech>.slide:nth-child(5)>.subsection-head{grid-column:1/-1;margin:0}
+#tech>.slide:nth-child(5)>.hardware-layout{grid-column:1;display:flex;flex-direction:column;gap:14px;align-items:stretch;min-width:0}
+#tech>.slide:nth-child(5)>.hardware-layout>.prose{columns:2;max-height:39svh;overflow:hidden;font-size:clamp(11.5px,.9vw,14px);line-height:1.38}
+#tech>.slide:nth-child(5)>.hardware-layout>.hardware-image img{max-height:13svh}
+#tech>.slide:nth-child(5)>.prose{grid-column:2;grid-row:2;columns:1;max-height:calc(100svh - 220px);overflow:hidden;font-size:clamp(12px,.95vw,15px);line-height:1.45}
+#tech>.slide:nth-child(5)>.prose{columns:unset;column-count:auto;column-width:auto;column-fill:auto}
+#tech>.slide:nth-child(5)>.skill-prose{display:block;columns:unset!important;column-count:auto;column-width:auto;column-fill:auto;font-size:clamp(11.5px,.8vw,13px);line-height:1.3}
+#tech>.slide:nth-child(5)>.skill-prose p,#tech>.slide:nth-child(5)>.skill-prose li{font-size:inherit;line-height:inherit}
+.skill-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.5vw}
+.skill-grid ul{min-width:0;margin:0}
 
 @media(max-width:800px){.tech>.slide:nth-child(3)>.prose,.tech>.slide:nth-child(4)>.prose,.tech>.slide:nth-child(5)>.prose,.tech>.slide:nth-child(6)>.prose{columns:1}.section>.slide p,.section>.slide li{font-size:clamp(14px,3.6vw,18px)}.section>.slide h2{font-size:clamp(48px,13vw,78px)}.section>.slide .subsection-head h3{font-size:clamp(42px,11vw,68px)}}
