@@ -23,7 +23,7 @@ body{scroll-snap-type:y mandatory}
 .references .live-links{font-size:clamp(11px,1.1vw,14px)}
 .section>.slide>.team-gallery{height:48svh}.section>.slide>.team-gallery figure,.section>.slide>.team-gallery figure:first-child,.section>.slide>.team-gallery figure:nth-child(2),.section>.slide>.team-gallery figure:nth-child(3){height:100%}.section>.slide>.schedule-image img{max-height:52svh}
 .section>.slide>*{min-width:0}
-#robomaster>.slide:first-child{justify-content:flex-start;padding-top:clamp(78px,9vh,105px);padding-bottom:24px}#robomaster>.slide:first-child>.section-head{margin-bottom:16px}#robomaster>.slide:first-child>.intro-links{margin-bottom:14px}#robomaster>.slide:first-child>.image-strip{grid-template-rows:13svh 8svh;max-height:22svh;margin:0}
+#robomaster>.slide:first-child{justify-content:flex-start;padding-top:clamp(78px,9vh,105px);padding-bottom:24px}#robomaster>.slide:first-child>.section-head{margin-bottom:16px}#robomaster>.slide:first-child>.intro-links{margin-bottom:14px}#robomaster>.slide:first-child>.intro-images{max-height:23svh;margin:0}
 @media(max-width:800px){html{scroll-snap-type:y proximity}.section>.slide{height:100svh;min-height:100svh;padding:88px 7vw 44px;justify-content:flex-start}.section>.slide>.section-head{margin-bottom:25px}.section>.slide>.image-strip{max-height:42svh}.section>.slide>.team-gallery{max-height:40svh}.role-feature .role-copy ul{max-height:26svh}.role-feature .role-image{height:30svh}.role-images img{height:13svh}.new-role-grid{max-height:72svh}.new-role .question-cube{height:18svh}.operator-grid{max-height:70svh}.tech .org,.tech .org img{max-height:34svh}.section>.slide>.prose,.section>.slide>.bullet-band,.section>.slide>.live-links{max-height:calc(100svh - 150px)}}
 
 /* 第二轮演示页校准：一兵种一页、每页保留图片层，长文案用双栏提高字号。 */
@@ -196,6 +196,29 @@ body{scroll-snap-type:y mandatory}
 #roles .role-feature.reverse .role-image,#roles .role-feature.reverse .role-images{order:2}
 #tech>.slide:nth-child(1)>.section-head h2{font-size:clamp(52px,5.4vw,78px);white-space:nowrap}
 #tech>.slide:nth-child(1)>.subsection-head h3{font-size:clamp(46px,5vw,72px)}
+
+/* RoboMaster 首屏图片拆成两组，分别服务于前两页，避免高质量素材全部挤在第一页。 */
+.intro-images{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:9px;width:100%;height:min(34svh,320px);margin:0;max-height:34svh}
+.intro-images figure,.intro-images figure:first-child,.intro-images figure:nth-child(2){grid-column:auto;grid-row:auto;height:100%;margin:0;overflow:hidden;background:#111}
+.intro-images img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.05);transition:transform .5s,filter .5s}
+.intro-images figure:hover img{transform:scale(1.04);filter:saturate(1) contrast(1.08)}
+#robomaster>.slide:nth-child(2){display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);grid-template-rows:1fr;align-items:center;column-gap:4vw}
+#robomaster>.slide:nth-child(2)>.bullet-band{grid-column:1;grid-row:1;margin:0;max-height:58svh;overflow:hidden;padding:18px 0}
+#robomaster>.slide:nth-child(2)>.intro-images{grid-column:2;grid-row:1;height:min(42svh,380px);max-height:42svh}
+#tech>.slide:nth-child(8){display:block;padding-left:14vw;padding-right:14vw}
+#tech>.slide:nth-child(8)>.subsection-head{margin:0 0 32px}
+#tech>.slide:nth-child(8)>.prose{max-width:1180px;columns:1;max-height:calc(100svh - 250px);overflow:hidden;font-size:clamp(15px,1.35vw,20px);line-height:1.72}
+
+@media(max-width:800px){
+  #robomaster>.slide:first-child>.intro-images{max-height:22svh}
+  #robomaster>.slide:nth-child(2){display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:88px 7vw 44px}
+  #robomaster>.slide:nth-child(2)>.bullet-band,#robomaster>.slide:nth-child(2)>.intro-images{width:100%;max-width:none;margin:0}
+  #robomaster>.slide:nth-child(2)>.bullet-band{max-height:34svh}
+  #robomaster>.slide:nth-child(2)>.intro-images{height:22svh;max-height:22svh}
+  .intro-images{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  #tech>.slide:nth-child(8){display:flex;padding:88px 7vw 44px;gap:18px}
+  #tech>.slide:nth-child(8)>.prose{max-height:calc(100svh - 190px);overflow:hidden}
+}
 
 /* 工程页沿用步兵页的多图卡片：两张工程图并列，右侧保持统一视觉重量。 */
 #roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
