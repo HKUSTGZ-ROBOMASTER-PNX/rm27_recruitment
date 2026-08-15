@@ -251,10 +251,7 @@ body{scroll-snap-type:y mandatory}
 #robomaster>.slide:nth-child(3){display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,11,16,.88),rgba(7,11,16,.42)),url('assets/image 5.png') center/cover}
 #robomaster>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;column-gap:4vw;background:linear-gradient(90deg,rgba(7,11,16,.92),rgba(7,11,16,.48)),url('assets/image 10.png') center/cover}
 #robomaster>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image.png') center/cover}
-.field-hero{position:relative;z-index:1;width:100%;height:72svh;overflow:hidden;background:rgba(7,11,16,.3)}
-.field-hero img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
 .intro-images.two{grid-template-columns:repeat(2,minmax(0,1fr));height:48svh;max-height:48svh}
-#robomaster>.slide:nth-child(2)>.field-hero{height:72svh}
 #robomaster>.slide:nth-child(3)>.intro-images{width:100%;height:48svh;max-height:48svh}
 #robomaster>.slide:nth-child(4)>.intro-images{grid-column:2;grid-row:1;height:42svh;max-height:42svh}
 #robomaster>.slide:nth-child(4)>.bullet-band{grid-column:1;grid-row:1;margin:0;max-height:58svh;overflow:hidden;padding:18px 0}
@@ -283,7 +280,6 @@ body{scroll-snap-type:y mandatory}
 
 @media(max-width:800px){
   #robomaster>.slide:nth-child(2){padding:88px 7vw 44px}
-  #robomaster>.slide:nth-child(2)>.field-hero{height:62svh}
   #robomaster>.slide:nth-child(3){display:flex;padding:88px 7vw 44px}
   #robomaster>.slide:nth-child(3)>.intro-images{height:30svh;max-height:30svh}
   #robomaster>.slide:nth-child(4){display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:88px 7vw 44px}
