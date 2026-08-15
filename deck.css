@@ -245,6 +245,87 @@ body{scroll-snap-type:y mandatory}
   #tech>.slide:nth-child(1)>.org.org-stack img{max-height:15svh}
 }
 
+/* 允许的背景素材收敛到指定图片；其余大图只作为前景内容图使用。 */
+#robomaster>.slide:nth-child(1){background:#070b10}
+#robomaster>.slide:nth-child(2){display:block;background:linear-gradient(90deg,rgba(7,11,16,.24),rgba(7,11,16,.18)),url('assets/rmuc_2026_field_top_view.jpeg') center/cover}
+#robomaster>.slide:nth-child(3){display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,11,16,.88),rgba(7,11,16,.42)),url('assets/image 5.png') center/cover}
+#robomaster>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;column-gap:4vw;background:linear-gradient(90deg,rgba(7,11,16,.92),rgba(7,11,16,.48)),url('assets/image 10.png') center/cover}
+#robomaster>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image.png') center/cover}
+.field-hero{position:relative;z-index:1;width:100%;height:72svh;overflow:hidden;background:rgba(7,11,16,.3)}
+.field-hero img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.intro-images.two{grid-template-columns:repeat(2,minmax(0,1fr));height:48svh;max-height:48svh}
+#robomaster>.slide:nth-child(2)>.field-hero{height:72svh}
+#robomaster>.slide:nth-child(3)>.intro-images{width:100%;height:48svh;max-height:48svh}
+#robomaster>.slide:nth-child(4)>.intro-images{grid-column:2;grid-row:1;height:42svh;max-height:42svh}
+#robomaster>.slide:nth-child(4)>.bullet-band{grid-column:1;grid-row:1;margin:0;max-height:58svh;overflow:hidden;padding:18px 0}
+
+/* 组织架构独立成页：两张图占满主要画布，职责说明放在底部。 */
+#tech>.slide:nth-child(1){display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:34px;padding-right:38vw}
+#tech>.slide:nth-child(1)>.section-head,#tech>.slide:nth-child(1)>.subsection-head{margin:0}
+#tech>.slide:nth-child(2){display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:22px}
+#tech>.slide:nth-child(2)>.org.org-stack{width:100%;max-width:1180px;max-height:60svh;margin:0 auto}
+#tech>.slide:nth-child(2)>.org.org-stack img{max-height:42svh}
+#tech>.slide:nth-child(2)>.bullet-band{width:100%;max-height:18svh;margin:0;padding:14px 0;overflow:hidden}
+
+/* 技术组、宣运、分享与资料页统一使用指定背景素材。 */
+#tech>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/3.jpg') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/10.jpg') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 3.png') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 1.png') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/10.jpg') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 5.png') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
+#sharing>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 3.png') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 5.png') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.62)),url('assets/image 1.png') center/cover}
+
+@media(max-width:800px){
+  #robomaster>.slide:nth-child(2){padding:88px 7vw 44px}
+  #robomaster>.slide:nth-child(2)>.field-hero{height:62svh}
+  #robomaster>.slide:nth-child(3){display:flex;padding:88px 7vw 44px}
+  #robomaster>.slide:nth-child(3)>.intro-images{height:30svh;max-height:30svh}
+  #robomaster>.slide:nth-child(4){display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:88px 7vw 44px}
+  #robomaster>.slide:nth-child(4)>.bullet-band,#robomaster>.slide:nth-child(4)>.intro-images{width:100%;max-width:none;margin:0}
+  #robomaster>.slide:nth-child(4)>.bullet-band{max-height:34svh}
+  #robomaster>.slide:nth-child(4)>.intro-images{height:22svh;max-height:22svh}
+  #tech>.slide:nth-child(1){display:flex;padding:88px 7vw 44px;gap:18px}
+  #tech>.slide:nth-child(2){display:flex;padding:88px 7vw 44px;gap:18px}
+  #tech>.slide:nth-child(2)>.org.org-stack{max-height:36svh}
+  #tech>.slide:nth-child(2)>.org.org-stack img{max-height:17svh}
+  #tech>.slide:nth-child(2)>.bullet-band{max-height:28svh}
+}
+
+/* 组织架构独立成页后，后续技术页的专用版式顺延一页。 */
+#tech>.slide:nth-child(6){display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);grid-template-rows:auto 1fr;align-content:center;column-gap:5vw;row-gap:18px}
+#tech>.slide:nth-child(6)>.subsection-head{grid-column:1/-1;grid-row:1;margin:0}
+#tech>.slide:nth-child(6)>.hardware-layout{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);gap:5vw;align-items:center;width:100%}
+#tech>.slide:nth-child(6)>.hardware-layout>.prose{grid-column:1;grid-row:1;max-height:54svh;overflow:hidden;columns:1}
+#tech>.slide:nth-child(6)>.hardware-layout>.hardware-image{grid-column:2;grid-row:1}
+#tech>.slide:nth-child(6)>.hardware-layout>.hardware-image img{max-height:38svh}
+#tech>.slide:nth-child(7){display:block;padding-left:14vw;padding-right:14vw}
+#tech>.slide:nth-child(7)>.subsection-head{margin:0 0 28px}
+#tech>.slide:nth-child(7)>.prose{columns:2;column-gap:5vw;max-height:calc(100svh - 230px);overflow:hidden}
+#tech>.slide:nth-child(9){display:block;padding-left:14vw;padding-right:14vw}
+#tech>.slide:nth-child(9)>.subsection-head{margin:0 0 32px}
+#tech>.slide:nth-child(9)>.prose{max-width:1180px;columns:1;max-height:calc(100svh - 250px);overflow:hidden}
+#tech>.slide:nth-child(10){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 10.png') center/cover}
+#tech>.slide:nth-child(11)>.content-image{height:min(38svh,340px)}
+#tech>.slide:nth-child(11)>.prose{max-height:calc(100svh - 260px);overflow:hidden}
+#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.97),rgba(7,11,16,.68)),url('assets/image 1.png') center/cover}
+
+@media(max-width:800px){
+  #tech>.slide:nth-child(6){display:flex;padding:88px 7vw 44px;gap:18px}
+  #tech>.slide:nth-child(6)>.hardware-layout{display:flex;flex-direction:column;gap:14px}
+  #tech>.slide:nth-child(6)>.hardware-layout>.hardware-image img{max-height:19svh}
+  #tech>.slide:nth-child(6)>.hardware-layout>.prose{max-height:43svh;overflow:hidden}
+  #tech>.slide:nth-child(7),#tech>.slide:nth-child(9){display:flex;padding:88px 7vw 44px;gap:18px}
+  #tech>.slide:nth-child(7)>.prose{columns:1;max-height:calc(100svh - 190px)}
+  #tech>.slide:nth-child(9)>.prose{max-height:calc(100svh - 190px)}
+  #tech>.slide:nth-child(11)>.content-image{height:24svh}
+}
+
 /* 工程页沿用步兵页的多图卡片：两张工程图并列，右侧保持统一视觉重量。 */
 #roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 #roles .role-images.two img{height:min(25svh,240px)}
