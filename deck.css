@@ -195,3 +195,12 @@ body{scroll-snap-type:y mandatory}
 #roles .role-feature.reverse .role-image,#roles .role-feature.reverse .role-images{order:2}
 #tech>.slide:nth-child(1)>.section-head h2{font-size:clamp(52px,5.4vw,78px);white-space:nowrap}
 #tech>.slide:nth-child(1)>.subsection-head h3{font-size:clamp(46px,5vw,72px)}
+
+/* 工程页沿用步兵页的多图卡片：两张工程图并列，右侧保持统一视觉重量。 */
+#roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#roles .role-images.two img{height:min(25svh,240px)}
+
+@media(max-width:800px){
+  #roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  #roles .role-images.two img{height:13svh}
+}
