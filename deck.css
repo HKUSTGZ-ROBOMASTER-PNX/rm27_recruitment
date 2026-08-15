@@ -262,7 +262,7 @@ body{scroll-snap-type:y mandatory}
 #tech>.slide:nth-child(2){display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:22px}
 #tech>.slide:nth-child(2)>.org.org-stack{width:100%;max-width:1180px;max-height:60svh;margin:0 auto}
 #tech>.slide:nth-child(2)>.org.org-stack img{max-height:42svh}
-#tech>.slide:nth-child(2)>.bullet-band{width:100%;max-height:18svh;margin:0;padding:14px 0;overflow:hidden}
+#tech>.slide:nth-child(2)>.bullet-band{width:100%;max-height:30svh;margin:0;padding:14px 0;overflow:hidden}
 
 /* 技术组、宣运、分享与资料页统一使用指定背景素材。 */
 #tech>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/3.jpg') center/cover}
@@ -290,7 +290,7 @@ body{scroll-snap-type:y mandatory}
   #tech>.slide:nth-child(2){display:flex;padding:88px 7vw 44px;gap:18px}
   #tech>.slide:nth-child(2)>.org.org-stack{max-height:36svh}
   #tech>.slide:nth-child(2)>.org.org-stack img{max-height:17svh}
-  #tech>.slide:nth-child(2)>.bullet-band{max-height:28svh}
+  #tech>.slide:nth-child(2)>.bullet-band{max-height:31svh}
 }
 
 /* 组织架构独立成页后，后续技术页的专用版式顺延一页。 */
@@ -329,4 +329,55 @@ body{scroll-snap-type:y mandatory}
 @media(max-width:800px){
   #roles .role-images.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   #roles .role-images.two img{height:13svh}
+}
+
+/* 机械组标题页的主图必须被限制在独立画布内，避免原图高度撑出页面并遮挡标题。 */
+#tech>.slide:nth-child(3){
+  display:grid;
+  grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);
+  grid-template-rows:1fr;
+  align-items:center;
+  column-gap:5vw;
+}
+#tech>.slide:nth-child(3)>.subsection-head{
+  grid-column:1;
+  grid-row:1;
+  align-self:center;
+  margin:0;
+}
+#tech>.slide:nth-child(3)>.mechanical-image{
+  grid-column:2;
+  grid-row:1;
+  width:100%;
+  height:min(46svh,400px);
+  max-height:none;
+  margin:0;
+}
+#tech>.slide:nth-child(3)>.mechanical-image img{
+  width:100%;
+  height:100%;
+  max-height:none;
+  object-fit:contain;
+}
+
+@media(max-width:800px){
+  #tech>.slide:nth-child(3){
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:18px;
+    padding:88px 7vw 44px;
+  }
+  #tech>.slide:nth-child(3)>.subsection-head{margin:0}
+  #tech>.slide:nth-child(3)>.mechanical-image{
+    width:100%;
+    height:24svh;
+    max-height:none;
+    margin:0;
+  }
+  #tech>.slide:nth-child(3)>.mechanical-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
 }
