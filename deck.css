@@ -331,6 +331,56 @@ body{scroll-snap-type:y mandatory}
   #roles .role-images.two img{height:13svh}
 }
 
+/* 老队员分享：使用真实人物图、调试现场和表情包，排版示例截图不作为页面素材。 */
+#sharing>.slide{background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 3.webp') center/cover}
+#sharing>.slide:nth-child(1){display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.5fr);grid-template-rows:auto 1fr;align-content:center;column-gap:5vw;row-gap:22px}
+#sharing>.slide:nth-child(1)>.section-head{grid-column:1;grid-row:1;margin:0;align-self:end}
+#sharing>.slide:nth-child(1)>.prose{grid-column:1;grid-row:2;max-width:780px;margin:0;max-height:42svh;overflow:hidden;columns:1}
+#sharing>.slide:nth-child(1)>.sharing-photo{grid-column:2;grid-row:1 / 3;align-self:center}
+#sharing>.slide:nth-child(2){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.64)),url('assets/10.webp')}
+#sharing>.slide:nth-child(3){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.64)),url('assets/image 5.webp')}
+#sharing>.slide:nth-child(2),#sharing>.slide:nth-child(3),#sharing>.slide:nth-child(5),#sharing>.slide:nth-child(6){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);grid-template-rows:1fr;align-content:center;column-gap:5vw}
+#sharing>.slide:nth-child(2)>.subsection-head,#sharing>.slide:nth-child(3)>.subsection-head,#sharing>.slide:nth-child(5)>.subsection-head,#sharing>.slide:nth-child(6)>.subsection-head{grid-column:1;grid-row:1;align-self:start;margin:0}
+#sharing>.slide:nth-child(2)>.prose,#sharing>.slide:nth-child(3)>.prose,#sharing>.slide:nth-child(5)>.prose,#sharing>.slide:nth-child(6)>.prose{grid-column:2;grid-row:1;max-width:none;max-height:calc(100svh - 190px);margin:0;overflow:hidden;columns:1;font-size:clamp(14px,1.08vw,17px);line-height:1.58}
+#sharing>.slide:nth-child(4){display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.18fr) minmax(220px,.67fr);grid-template-rows:1fr;align-content:center;column-gap:4vw}
+#sharing>.slide:nth-child(4){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.6)),url('assets/image 10.webp')}
+#sharing>.slide:nth-child(4)>.subsection-head{grid-column:1;grid-row:1;align-self:start;margin:0}
+#sharing>.slide:nth-child(4)>.prose{grid-column:2;grid-row:1;max-width:none;max-height:calc(100svh - 190px);margin:0;overflow:hidden;columns:1;font-size:clamp(13px,1vw,16px);line-height:1.52}
+#sharing>.slide:nth-child(4)>.sharing-photo{grid-column:3;grid-row:1;align-self:center;height:min(42svh,380px)}
+#sharing>.slide:nth-child(5){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 1.webp')}
+#sharing>.slide:nth-child(6){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/3.webp')}
+#sharing>.slide:nth-child(7){display:grid;grid-template-columns:minmax(0,1.25fr) minmax(220px,.45fr);grid-template-rows:1fr;align-items:center;column-gap:5vw;background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.56)),url('assets/image 5.webp')}
+#sharing>.slide:nth-child(7)>.prose{grid-column:1;grid-row:1;max-width:none;max-height:calc(100svh - 190px);margin:0;overflow:hidden;columns:1;font-size:clamp(13px,1vw,16px);line-height:1.5}
+#sharing>.slide:nth-child(7)>.sharing-photo{grid-column:2;grid-row:1;align-self:center;height:min(28svh,250px)}
+#sharing>.slide:nth-child(8){display:block;padding-left:14vw;padding-right:14vw;background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/10.webp')}
+#sharing>.slide:nth-child(8)>.prose{max-width:none;max-height:calc(100svh - 190px);margin:0;overflow:hidden;columns:2;column-gap:5vw;font-size:clamp(14px,1.06vw,16px);line-height:1.58}
+#sharing>.slide:nth-child(9){display:block;padding-left:14vw;padding-right:14vw;background-image:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 3.webp')}
+#sharing>.slide:nth-child(9)>.prose{max-width:1100px;max-height:calc(100svh - 180px);margin:0 auto;overflow:hidden;font-size:clamp(15px,1.12vw,18px);line-height:1.62}
+#sharing>.slide:nth-child(9) strong{color:#fff;font-size:1.06em}
+.sharing-photo{position:relative;z-index:1;width:100%;margin:0;overflow:hidden;border:1px solid rgba(233,238,241,.28);background:rgba(7,11,16,.7);box-shadow:14px 14px 0 rgba(255,62,83,.42)}
+.sharing-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.sharing-member{max-width:360px}
+.sharing-late-night{max-width:390px}
+.sharing-question{max-width:240px;box-shadow:-12px 12px 0 rgba(57,185,255,.4)}
+
+@media(max-width:800px){
+  #sharing>.slide:nth-child(1),#sharing>.slide:nth-child(2),#sharing>.slide:nth-child(3),#sharing>.slide:nth-child(4),#sharing>.slide:nth-child(5),#sharing>.slide:nth-child(6),#sharing>.slide:nth-child(7),#sharing>.slide:nth-child(8),#sharing>.slide:nth-child(9){display:flex;flex-direction:column;align-items:stretch;gap:18px;padding:88px 7vw 44px}
+  #sharing>.slide:nth-child(1)>.section-head,#sharing>.slide:nth-child(1)>.prose,#sharing>.slide:nth-child(1)>.sharing-photo,#sharing>.slide:nth-child(2)>.subsection-head,#sharing>.slide:nth-child(2)>.prose,#sharing>.slide:nth-child(3)>.subsection-head,#sharing>.slide:nth-child(3)>.prose,#sharing>.slide:nth-child(4)>.subsection-head,#sharing>.slide:nth-child(4)>.prose,#sharing>.slide:nth-child(4)>.sharing-photo,#sharing>.slide:nth-child(5)>.subsection-head,#sharing>.slide:nth-child(5)>.prose,#sharing>.slide:nth-child(6)>.subsection-head,#sharing>.slide:nth-child(6)>.prose,#sharing>.slide:nth-child(7)>.prose,#sharing>.slide:nth-child(7)>.sharing-photo,#sharing>.slide:nth-child(8)>.prose,#sharing>.slide:nth-child(9)>.prose{width:100%;max-width:none;margin:0}
+  #sharing>.slide:nth-child(1)>.section-head{order:1}
+  #sharing>.slide:nth-child(1)>.prose{order:2;max-height:30svh}
+  #sharing>.slide:nth-child(1)>.sharing-photo{order:3;align-self:center;width:54%;height:32svh;max-width:230px}
+  #sharing>.slide:nth-child(2)>.subsection-head,#sharing>.slide:nth-child(3)>.subsection-head,#sharing>.slide:nth-child(4)>.subsection-head,#sharing>.slide:nth-child(5)>.subsection-head,#sharing>.slide:nth-child(6)>.subsection-head{order:1}
+  #sharing>.slide:nth-child(2)>.prose,#sharing>.slide:nth-child(3)>.prose,#sharing>.slide:nth-child(5)>.prose,#sharing>.slide:nth-child(6)>.prose{order:2;max-height:52svh;font-size:13px;line-height:1.48}
+  #sharing>.slide:nth-child(4)>.prose{order:2;max-height:40svh;font-size:13px;line-height:1.44}
+  #sharing>.slide:nth-child(4)>.sharing-photo{order:3;align-self:center;width:74%;height:23svh;max-width:330px}
+  #sharing>.slide:nth-child(7)>.prose{order:1;max-height:50svh;font-size:13px;line-height:1.45}
+  #sharing>.slide:nth-child(7)>.sharing-photo{order:2;align-self:flex-end;width:42%;height:18svh;max-width:180px}
+  #sharing>.slide:nth-child(8)>.prose{columns:1;max-height:60svh;font-size:13px;line-height:1.48}
+  #sharing>.slide:nth-child(9)>.prose{max-height:64svh;font-size:13px;line-height:1.5}
+  .sharing-photo{box-shadow:8px 8px 0 rgba(255,62,83,.34)}
+  .sharing-question{box-shadow:-7px 7px 0 rgba(57,185,255,.34)}
+}
+
 /* 机械组标题页的主图必须被限制在独立画布内，避免原图高度撑出页面并遮挡标题。 */
 #tech>.slide:nth-child(3){
   display:grid;
