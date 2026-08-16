@@ -461,3 +461,103 @@ body{scroll-snap-type:y mandatory}
     object-fit:contain;
   }
 }
+
+/* 最终视觉编排：背景按内容推进，战场俯视图只作为 RoboMaster 部分的收束页。 */
+.hero>.hero-bg{background:linear-gradient(135deg,rgba(5,8,13,.64),rgba(17,26,39,.58)),url('assets/image 5.webp') center/cover}
+
+#robomaster>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/image 5.webp') center/cover}
+#robomaster>.slide:nth-child(2){display:block;padding-left:7vw;padding-right:7vw;background:linear-gradient(90deg,rgba(7,11,16,.78),rgba(7,11,16,.42)),url('assets/image.webp') center/cover}
+#robomaster>.slide:nth-child(2)>.intro-images{height:min(60svh,560px);max-height:60svh}
+#robomaster>.slide:nth-child(3){display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);grid-template-rows:1fr;align-items:center;gap:4vw;background:linear-gradient(90deg,rgba(7,11,16,.9),rgba(7,11,16,.5)),url('assets/image 10.webp') center/cover}
+#robomaster>.slide:nth-child(3)>.intro-images{grid-column:1;grid-row:1;height:min(48svh,440px);max-height:48svh}
+#robomaster>.slide:nth-child(3)>.bullet-band{grid-column:2;grid-row:1;max-height:58svh;margin:0;overflow:hidden}
+#robomaster>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 3.webp') center/cover}
+#robomaster>.slide:nth-child(4){padding-top:72px;padding-bottom:16px}
+#robomaster>.slide:nth-child(4)>.text-panel{grid-template-columns:repeat(3,minmax(0,1fr));gap:3vw;margin-top:0;padding-top:24px;font-size:16px;line-height:1.55}
+#robomaster>.slide:nth-child(4)>.text-panel p{margin:0}
+#robomaster>.slide:nth-child(5){display:block;padding:0;background:linear-gradient(90deg,rgba(7,11,16,.18),rgba(7,11,16,.06)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
+
+#team>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/3.webp') center/cover}
+#team>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.88),rgba(7,11,16,.48)),url('assets/10.webp') center/cover}
+#team>.slide>.team-gallery{height:min(60svh,560px);max-height:68svh}
+
+#roles>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.58)),url('assets/10.webp') center/cover}
+#roles>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 5.webp') center/cover}
+#roles>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 1.webp') center/cover}
+#roles>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/3.webp') center/cover}
+#roles>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 3.webp') center/cover}
+#roles>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 5.webp') center/cover}
+#roles>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 10.webp') center/cover}
+#roles>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 1.webp') center/cover}
+#roles>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/3.webp') center/cover}
+#roles>.slide:nth-child(10){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 5.webp') center/cover}
+#roles>.slide:nth-child(11){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 10.webp') center/cover}
+#roles>.slide:nth-child(12){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 5.webp') center/cover}
+#roles>.slide:nth-child(13){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 1.webp') center/cover}
+#roles>.slide:nth-child(14){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 3.webp') center/cover}
+#roles>.slide:nth-child(15){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 10.webp') center/cover}
+#roles .role-images img{height:min(32svh,310px)}
+
+#tech>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.54)),url('assets/3.webp') center/cover}
+#tech>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 10.webp') center/cover}
+#tech>.slide:nth-child(3){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 1.webp') center/cover}
+#tech>.slide:nth-child(5){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 3.webp') center/cover}
+#tech>.slide:nth-child(6){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/image 1.webp') center/cover}
+#tech>.slide:nth-child(7){background:linear-gradient(90deg,rgba(7,11,16,.96),rgba(7,11,16,.58)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(8){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(9){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 10.webp') center/cover}
+#tech>.slide:nth-child(10){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 3.webp') center/cover}
+#tech>.slide:nth-child(11){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 1.webp') center/cover}
+#tech>.slide:nth-child(12){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/image 5.webp') center/cover}
+#tech>.slide:nth-child(13){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.52)),url('assets/10.webp') center/cover}
+#tech>.slide:nth-child(1)>.org.org-stack{max-height:70svh}
+#tech>.slide:nth-child(1)>.org.org-stack img{max-height:38svh}
+#tech>.slide:nth-child(3)>.mechanical-image{height:min(54svh,500px)}
+#tech>.slide>.hardware-layout>.hardware-image img{max-height:48svh}
+#tech>.slide>.content-image{height:min(66svh,580px)}
+#tech>.slide:nth-child(11){display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);grid-template-rows:auto 1fr;align-content:center;column-gap:5vw;row-gap:18px}
+#tech>.slide:nth-child(11)>.subsection-head{grid-column:1;grid-row:1;margin:0}
+#tech>.slide:nth-child(11)>.prose{grid-column:1;grid-row:2;max-height:48svh;overflow:hidden;margin:0}
+#tech>.slide:nth-child(11)>.content-image{grid-column:2;grid-row:1 / 3;height:min(58svh,500px);align-self:center}
+
+#schedule>.slide{background:linear-gradient(90deg,rgba(7,11,16,.92),rgba(7,11,16,.48)),url('assets/image 5.webp') center/cover}
+#references>.slide:nth-child(1){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.54)),url('assets/image 3.webp') center/cover}
+#references>.slide:nth-child(2){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.54)),url('assets/image 1.webp') center/cover}
+
+/* 正文放大但不动标题；已有专用两栏页继续保留更紧的行距，避免长文被裁切。 */
+#roles .role-copy,#roles .role-copy li{font-size:clamp(16px,1.35vw,20px)!important;line-height:1.58!important}
+#tech>.slide>.prose p,#tech>.slide>.prose li{font-size:clamp(15px,1.2vw,18px)!important;line-height:1.52!important}
+#tech>.slide:nth-child(4)>.prose p,#tech>.slide:nth-child(4)>.prose li,#tech>.slide:nth-child(5)>.prose p,#tech>.slide:nth-child(5)>.prose li{font-size:clamp(14px,1.1vw,17px)!important;line-height:1.45!important}
+#sharing>.slide>.prose p,#sharing>.slide>.prose li{font-size:clamp(15px,1.18vw,18px)!important;line-height:1.52!important}
+
+@media(max-width:800px){
+  #tech>.slide{display:flex!important;flex-direction:column;align-items:stretch;gap:14px;padding:78px 7vw 38px}
+  #tech>.slide>.section-head,#tech>.slide>.subsection-head,#tech>.slide>.prose,#tech>.slide>.hardware-layout,#tech>.slide>.content-image,#tech>.slide>.org,#tech>.slide>.bullet-band{width:100%;max-width:none;margin:0}
+  #tech>.slide>.hardware-layout{display:flex!important;flex-direction:column;gap:14px}
+  #tech>.slide>.hardware-layout>.prose{width:100%;columns:1!important;column-count:1!important;column-width:auto!important;max-height:38svh;overflow:hidden}
+  #tech>.slide:nth-child(4)>.hardware-layout>.prose,#tech>.slide:nth-child(5)>.hardware-layout>.prose{max-height:38svh!important;overflow:hidden}
+  #tech>.slide>.hardware-layout>.hardware-image{width:100%;height:22svh;max-width:none;overflow:hidden}
+  #tech>.slide>.hardware-layout>.hardware-image img{width:100%;height:100%;max-height:none;object-fit:contain}
+  #tech>.slide>.prose{columns:1!important;column-count:1!important;column-width:auto!important;max-width:100%;overflow:hidden}
+  #robomaster>.slide:nth-child(2){display:flex;gap:18px;padding:78px 7vw 38px}
+  #robomaster>.slide:nth-child(2)>.intro-images{height:30svh;max-height:30svh}
+  #robomaster>.slide:nth-child(3){display:flex;flex-direction:column;align-items:stretch;gap:16px;padding:78px 7vw 38px}
+  #robomaster>.slide:nth-child(3)>.intro-images{height:25svh;max-height:25svh}
+  #robomaster>.slide:nth-child(3)>.bullet-band{max-height:34svh}
+  #robomaster>.slide:nth-child(5){padding:0}
+  #team>.slide>.team-gallery{height:50svh;max-height:54svh}
+  #roles .role-images img{height:min(18svh,170px)}
+  #tech>.slide:nth-child(1)>.org.org-stack{max-height:38svh}
+  #tech>.slide:nth-child(1)>.org.org-stack img{max-height:18svh}
+  #tech>.slide:nth-child(3)>.mechanical-image{height:30svh}
+  #tech>.slide>.hardware-layout>.hardware-image img{max-height:34svh}
+  #tech>.slide>.content-image{height:38svh}
+  #tech>.slide:nth-child(11){display:flex;flex-direction:column;align-items:stretch;gap:14px;padding:78px 7vw 38px}
+  #tech>.slide:nth-child(11)>.subsection-head,#tech>.slide:nth-child(11)>.prose,#tech>.slide:nth-child(11)>.content-image{width:100%;max-width:none;margin:0}
+  #tech>.slide:nth-child(11)>.prose{max-height:34svh}
+  #tech>.slide:nth-child(11)>.content-image{height:30svh}
+  #roles .role-copy,#roles .role-copy li{font-size:clamp(15px,4vw,18px)!important;line-height:1.46!important}
+  #tech>.slide>.prose p,#tech>.slide>.prose li,#tech>.slide:nth-child(4)>.prose p,#tech>.slide:nth-child(4)>.prose li,#tech>.slide:nth-child(5)>.prose p,#tech>.slide:nth-child(5)>.prose li{font-size:clamp(14px,3.8vw,17px)!important;line-height:1.4!important}
+  #sharing>.slide>.prose p,#sharing>.slide>.prose li{font-size:clamp(14px,3.8vw,17px)!important;line-height:1.42!important}
+}
