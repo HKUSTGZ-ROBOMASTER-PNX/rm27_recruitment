@@ -750,3 +750,23 @@ body{background:#05090e}
   #roles .new-role .question-cube{height:15svh!important;min-height:96px;margin-bottom:12px}
   #roles .new-role .question-cube span{font-size:clamp(68px,18vw,112px);line-height:.78}
 }
+
+/* 宣运招新页展平：标题横向展开，正文铺成双栏，减少左侧大标题造成的纵向挤压。 */
+#tech>.slide:nth-child(13){
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  grid-template-rows:auto 1fr;
+  align-content:center;
+  column-gap:5vw;
+  row-gap:24px;
+}
+#tech>.slide:nth-child(13)>.subsection-head{grid-column:1/-1;grid-row:1;margin:0;padding-left:22px}
+#tech>.slide:nth-child(13)>.subsection-head h3{font-size:clamp(42px,4.6vw,72px);line-height:1.02;white-space:nowrap}
+#tech>.slide:nth-child(13)>.prose{grid-column:1/-1;grid-row:2;max-width:none;max-height:calc(100svh - 270px);overflow:hidden;columns:2;column-gap:5vw;font-size:clamp(15px,1.2vw,19px);line-height:1.55}
+#tech>.slide:nth-child(13)>.prose>*{break-inside:avoid}
+@media(max-width:800px){
+  #tech>.slide:nth-child(13){display:flex!important;flex-direction:column;align-items:stretch;gap:18px;padding:78px 7vw 38px}
+  #tech>.slide:nth-child(13)>.subsection-head{width:100%;margin:0;padding-left:16px}
+  #tech>.slide:nth-child(13)>.subsection-head h3{font-size:clamp(38px,10vw,60px);white-space:normal}
+  #tech>.slide:nth-child(13)>.prose{width:100%;max-height:calc(100svh - 190px);columns:1;font-size:clamp(14px,3.8vw,17px);line-height:1.42}
+}
