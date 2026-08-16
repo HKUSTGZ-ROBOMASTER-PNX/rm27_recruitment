@@ -794,6 +794,9 @@ body{background:#05090e}
 #lin-sharing>.lin-slide p,#lin-sharing>.lin-slide li{font-size:clamp(18px,1.3vw,22px)!important;line-height:1.55!important}
 #lin-sharing>.lin-slide .lin-copy p{margin:0 0 18px}
 #lin-sharing>.lin-slide .lin-copy strong{font-size:1.04em}
+#lin-sharing .lin-keywords{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 30px;column-span:all;margin:22px 0 0;padding:18px 0 0;border-top:1px solid rgba(185,240,255,.18);list-style:none}
+#lin-sharing .lin-keywords li{position:relative;margin:0!important;padding-left:1.15em;color:#c0d0d9;font-weight:650}
+#lin-sharing .lin-keywords li:before{content:'+';position:absolute;left:0;color:var(--blue);font:900 1em var(--display);text-shadow:0 0 10px var(--cyan-glow)}
 #lin-sharing>.lin-slide>.lin-media-slot{grid-column:2;grid-row:1;min-height:min(58svh,480px);border:1px dashed rgba(185,240,255,.28);background:linear-gradient(135deg,rgba(57,185,255,.06),rgba(255,255,255,.015));box-shadow:inset 0 0 34px rgba(57,185,255,.06),12px 12px 0 rgba(255,62,83,.12);position:relative;overflow:hidden}
 #lin-sharing>.lin-slide>.lin-media-slot:after{content:'';position:absolute;inset:15px;border:1px solid rgba(185,240,255,.12);background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(185,240,255,.04) 23px,transparent 24px);}
 #lin-sharing>.lin-slide--media>.lin-media-slot{grid-column:2;grid-row:1}
@@ -808,6 +811,7 @@ body{background:#05090e}
   #lin-sharing>.lin-cover>.lin-copy{margin-top:10px}
   #lin-sharing>.lin-slide--media>.lin-copy,#lin-sharing>.lin-slide--full>.lin-copy{width:100%;max-width:none;max-height:calc(100svh - 190px);columns:1;font-size:clamp(16px,4.2vw,19px);line-height:1.48}
   #lin-sharing>.lin-slide p,#lin-sharing>.lin-slide li{font-size:clamp(16px,4.2vw,19px)!important;line-height:1.48!important}
+  #lin-sharing .lin-keywords{grid-template-columns:1fr;gap:7px 0;margin-top:16px;padding-top:14px}
   #lin-sharing>.lin-slide--media>.lin-media-slot{order:2;width:100%;min-height:18svh;height:18svh}
   #lin-sharing>.lin-slide--full{padding-left:7vw;padding-right:7vw}
   #lin-sharing>.lin-slide--full>.lin-copy{max-height:calc(100svh - 160px)}
