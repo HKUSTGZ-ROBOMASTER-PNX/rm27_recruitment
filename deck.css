@@ -742,3 +742,11 @@ body{background:#05090e}
   .mode:hover{transform:none}
   .reveal:nth-child(n){transition-delay:0s}
 }
+
+/* 全新兵种问号完整收进卡片，避免大字号字形从底部被裁切。 */
+.new-role .question-cube{overflow:hidden;display:grid;place-items:center}
+.new-role .question-cube span{position:relative;z-index:1;font-size:clamp(112px,12vw,188px);line-height:.82;transform-origin:center;}
+@media(max-width:800px){
+  #roles .new-role .question-cube{height:15svh!important;min-height:96px;margin-bottom:12px}
+  #roles .new-role .question-cube span{font-size:clamp(68px,18vw,112px);line-height:.78}
+}
