@@ -770,3 +770,40 @@ body{background:#05090e}
   #tech>.slide:nth-child(13)>.subsection-head h3{font-size:clamp(38px,10vw,60px);white-space:normal}
   #tech>.slide:nth-child(13)>.prose{width:100%;max-height:calc(100svh - 190px);columns:1;font-size:clamp(14px,3.8vw,17px);line-height:1.42}
 }
+
+/* 林新源分享：完整保留口述文案，图片位置先用右侧留白占位。 */
+#lin-sharing>.lin-slide{background:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 3.webp') center/cover}
+#lin-sharing>.lin-slide:nth-child(2){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/10.webp')}
+#lin-sharing>.lin-slide:nth-child(3){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 5.webp')}
+#lin-sharing>.lin-slide:nth-child(4){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 1.webp')}
+#lin-sharing>.lin-slide:nth-child(5){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/3.webp')}
+#lin-sharing>.lin-slide:nth-child(6){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 10.webp')}
+#lin-sharing>.lin-slide:nth-child(7){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 5.webp')}
+#lin-sharing>.lin-slide:nth-child(8){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 1.webp')}
+#lin-sharing>.lin-slide:nth-child(9){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 3.webp')}
+#lin-sharing>.lin-slide:nth-child(10){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/10.webp')}
+#lin-sharing>.lin-slide:nth-child(11){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.62)),url('assets/image 5.webp')}
+#lin-sharing>.lin-cover{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);grid-template-rows:1fr;align-items:center;column-gap:5vw}
+#lin-sharing>.lin-cover>.section-head{grid-column:1;grid-row:1;margin:0}
+#lin-sharing>.lin-cover>.lin-copy{grid-column:2;grid-row:1;margin:0;max-width:none}
+#lin-sharing>.lin-slide--media{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1fr);grid-template-rows:1fr;align-items:center;column-gap:5vw}
+#lin-sharing>.lin-slide--media>.lin-copy{grid-column:1;grid-row:1;max-height:calc(100svh - 190px);overflow:hidden;margin:0;max-width:none}
+#lin-sharing>.lin-slide--full{display:block;padding-left:11vw;padding-right:11vw}
+#lin-sharing>.lin-slide--full>.lin-copy{max-width:none;max-height:calc(100svh - 190px);overflow:hidden;columns:2;column-gap:5vw;margin:0}
+#lin-sharing>.lin-slide .lin-copy{font-size:clamp(16px,1.22vw,19px);line-height:1.62}
+#lin-sharing>.lin-slide .lin-copy p{margin:0 0 18px}
+#lin-sharing>.lin-slide .lin-copy strong{font-size:1.04em}
+#lin-sharing>.lin-slide>.lin-media-slot{grid-column:2;grid-row:1;min-height:min(58svh,480px);border:1px dashed rgba(185,240,255,.28);background:linear-gradient(135deg,rgba(57,185,255,.06),rgba(255,255,255,.015));box-shadow:inset 0 0 34px rgba(57,185,255,.06),12px 12px 0 rgba(255,62,83,.12);position:relative;overflow:hidden}
+#lin-sharing>.lin-slide>.lin-media-slot:after{content:'';position:absolute;inset:15px;border:1px solid rgba(185,240,255,.12);background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(185,240,255,.04) 23px,transparent 24px);}
+#lin-sharing>.lin-slide--media>.lin-media-slot{grid-column:2;grid-row:1}
+#lin-sharing>.lin-slide--media>.lin-copy p:first-child strong{color:#fff}
+@media(max-width:800px){
+  #lin-sharing>.lin-slide{display:flex!important;flex-direction:column;align-items:stretch;gap:18px;padding:78px 7vw 38px}
+  #lin-sharing>.lin-cover{justify-content:center}
+  #lin-sharing>.lin-cover>.section-head,#lin-sharing>.lin-cover>.lin-copy{width:100%;max-width:none;margin:0}
+  #lin-sharing>.lin-cover>.lin-copy{margin-top:10px}
+  #lin-sharing>.lin-slide--media>.lin-copy,#lin-sharing>.lin-slide--full>.lin-copy{width:100%;max-width:none;max-height:calc(100svh - 190px);columns:1;font-size:clamp(14px,3.8vw,17px);line-height:1.46}
+  #lin-sharing>.lin-slide--media>.lin-media-slot{order:2;width:100%;min-height:18svh;height:18svh}
+  #lin-sharing>.lin-slide--full{padding-left:7vw;padding-right:7vw}
+  #lin-sharing>.lin-slide--full>.lin-copy{max-height:calc(100svh - 160px)}
+}
