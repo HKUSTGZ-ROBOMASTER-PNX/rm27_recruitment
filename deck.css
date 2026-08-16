@@ -590,12 +590,6 @@ body{scroll-snap-type:y mandatory}
   #sharing>.slide:nth-child(6)>.subsection-head,#sharing>.slide:nth-child(6)>.prose{width:100%;max-width:none}
 }
 
-/* 首页与第一帧统一标题层级，并关闭首屏入场过渡，避免加载时闪出旧标题。 */
+/* 首页保留原始品牌标题，并关闭首屏入场过渡，避免加载时闪出旧标题。 */
 .hero-content{opacity:1;transform:none;animation:none;transition:none;will-change:auto}
-.hero h1.hero-intro-title{font:900 clamp(52px,7.2vw,108px)/1.04 var(--serif);letter-spacing:-.07em;margin:34px 0;color:#fff;text-shadow:0 5px 30px rgba(0,0,0,.4)}
-.hero-intro-title span{display:block;color:var(--blue)}
 .hero-content .hero-line,.hero-content .hero-rule,.hero-content .cta{animation:none;transition:none}
-
-@media(max-width:800px){
-  .hero h1.hero-intro-title{font-size:clamp(34px,9.5vw,58px);line-height:1.08;letter-spacing:-.06em;margin:28px 0}
-}
