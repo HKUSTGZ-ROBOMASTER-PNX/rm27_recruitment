@@ -333,10 +333,10 @@ body{scroll-snap-type:y mandatory}
 
 /* 老队员分享：使用真实人物图、调试现场和表情包，排版示例截图不作为页面素材。 */
 #sharing>.slide{background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.62)),url('assets/image 3.webp') center/cover}
-#sharing>.slide:nth-child(1){display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.5fr);grid-template-rows:auto 1fr;align-content:center;column-gap:5vw;row-gap:22px}
+#sharing>.slide:nth-child(1){display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.65fr);grid-template-rows:auto 1fr;align-content:center;column-gap:5vw;row-gap:22px}
 #sharing>.slide:nth-child(1)>.section-head{grid-column:1;grid-row:1;margin:0;align-self:end}
 #sharing>.slide:nth-child(1)>.prose{grid-column:1;grid-row:2;max-width:780px;margin:0;max-height:42svh;overflow:hidden;columns:1}
-#sharing>.slide:nth-child(1)>.sharing-photo{grid-column:2;grid-row:1 / 3;align-self:center}
+#sharing>.slide:nth-child(1)>.sharing-bio{grid-column:2;grid-row:1 / 3;align-self:center}
 #sharing>.slide:nth-child(2){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.64)),url('assets/10.webp')}
 #sharing>.slide:nth-child(3){background-image:linear-gradient(90deg,rgba(7,11,16,.95),rgba(7,11,16,.64)),url('assets/image 5.webp')}
 #sharing>.slide:nth-child(2),#sharing>.slide:nth-child(3),#sharing>.slide:nth-child(5),#sharing>.slide:nth-child(6){display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);grid-template-rows:1fr;align-content:center;column-gap:5vw}
@@ -359,6 +359,9 @@ body{scroll-snap-type:y mandatory}
 #sharing>.slide:nth-child(9) strong{color:#fff;font-size:1.06em}
 .sharing-photo{position:relative;z-index:1;width:100%;margin:0;overflow:hidden;border:1px solid rgba(233,238,241,.28);background:rgba(7,11,16,.7);box-shadow:14px 14px 0 rgba(255,62,83,.42)}
 .sharing-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.sharing-bio{position:relative;z-index:1;max-width:390px;padding:26px 30px;border-left:2px solid var(--blue);background:linear-gradient(135deg,rgba(7,11,16,.72),rgba(7,11,16,.28));box-shadow:12px 12px 0 rgba(57,185,255,.22);color:#fff}
+.sharing-bio .kicker{margin:0 0 22px}
+.sharing-bio p:not(.kicker){margin:0 0 10px;font-size:clamp(17px,1.3vw,20px);font-weight:700;line-height:1.4}
 .sharing-member{max-width:360px}
 .sharing-late-night{max-width:390px}
 .sharing-question{max-width:240px;box-shadow:-12px 12px 0 rgba(57,185,255,.4)}
@@ -368,7 +371,7 @@ body{scroll-snap-type:y mandatory}
   #sharing>.slide:nth-child(1)>.section-head,#sharing>.slide:nth-child(1)>.prose,#sharing>.slide:nth-child(1)>.sharing-photo,#sharing>.slide:nth-child(2)>.subsection-head,#sharing>.slide:nth-child(2)>.prose,#sharing>.slide:nth-child(3)>.subsection-head,#sharing>.slide:nth-child(3)>.prose,#sharing>.slide:nth-child(4)>.subsection-head,#sharing>.slide:nth-child(4)>.prose,#sharing>.slide:nth-child(4)>.sharing-photo,#sharing>.slide:nth-child(5)>.subsection-head,#sharing>.slide:nth-child(5)>.prose,#sharing>.slide:nth-child(6)>.subsection-head,#sharing>.slide:nth-child(6)>.prose,#sharing>.slide:nth-child(7)>.prose,#sharing>.slide:nth-child(7)>.sharing-photo,#sharing>.slide:nth-child(8)>.prose,#sharing>.slide:nth-child(9)>.prose{width:100%;max-width:none;margin:0}
   #sharing>.slide:nth-child(1)>.section-head{order:1}
   #sharing>.slide:nth-child(1)>.prose{order:2;max-height:30svh}
-  #sharing>.slide:nth-child(1)>.sharing-photo{order:3;align-self:center;width:54%;height:32svh;max-width:230px}
+  #sharing>.slide:nth-child(1)>.sharing-bio{order:3;max-width:none;padding:18px 20px}
   #sharing>.slide:nth-child(2)>.subsection-head,#sharing>.slide:nth-child(3)>.subsection-head,#sharing>.slide:nth-child(4)>.subsection-head,#sharing>.slide:nth-child(5)>.subsection-head,#sharing>.slide:nth-child(6)>.subsection-head{order:1}
   #sharing>.slide:nth-child(2)>.prose,#sharing>.slide:nth-child(3)>.prose,#sharing>.slide:nth-child(5)>.prose,#sharing>.slide:nth-child(6)>.prose{order:2;max-height:52svh;font-size:13px;line-height:1.48}
   #sharing>.slide:nth-child(4)>.prose{order:2;max-height:40svh;font-size:13px;line-height:1.44}
@@ -379,6 +382,33 @@ body{scroll-snap-type:y mandatory}
   #sharing>.slide:nth-child(9)>.prose{max-height:64svh;font-size:13px;line-height:1.5}
   .sharing-photo{box-shadow:8px 8px 0 rgba(255,62,83,.34)}
   .sharing-question{box-shadow:-7px 7px 0 rgba(57,185,255,.34)}
+}
+
+/* 全局正文校准：提高可读性，同时收紧页边距，让图片和内容占据更多画布。 */
+.section>.slide{padding:clamp(82px,8vh,110px) 7vw clamp(42px,6vh,72px)}
+.section>.slide p,.section>.slide li{font-size:clamp(16px,1.35vw,20px)!important;line-height:1.58}
+.section>.slide>.prose,.section>.slide>.bullet-band,.section>.slide>.live-links{font-size:clamp(16px,1.35vw,20px);line-height:1.58}
+.section>.slide>.image-strip{max-height:64svh}
+.section>.slide>.team-gallery{height:54svh;max-height:68svh}
+.section>.slide>.schedule-image img{max-height:60svh}
+.section>.slide .role-images img{height:min(29svh,280px)}
+.section>.slide .hardware-image img{max-height:48svh}
+#tech>.slide:nth-child(3)>.mechanical-image{height:min(52svh,460px)}
+#tech>.slide>.content-image{height:min(62svh,520px)}
+
+@media(max-width:800px){
+  .section>.slide{padding:78px 7vw 38px}
+  .section>.slide p,.section>.slide li{font-size:clamp(15px,4vw,19px)!important;line-height:1.5}
+  .section>.slide>.prose,.section>.slide>.bullet-band,.section>.slide>.live-links{font-size:clamp(15px,4vw,19px);line-height:1.5}
+  .section>.slide>.image-strip{max-height:48svh}
+  .section>.slide>.team-gallery{height:46svh;max-height:48svh}
+  .section>.slide>.schedule-image img{max-height:54svh}
+  .section>.slide .role-images img{height:min(16svh,150px)}
+  .section>.slide .hardware-image img{max-height:30svh}
+  #tech>.slide:nth-child(3)>.mechanical-image{height:28svh}
+  #tech>.slide>.content-image{height:32svh}
+  #tech>.slide:nth-child(4){padding-top:64px;padding-bottom:24px;gap:10px}
+  #tech>.slide:nth-child(4)>.prose p,#tech>.slide:nth-child(4)>.prose li{font-size:clamp(15px,3.8vw,17px)!important;line-height:1.38}
 }
 
 /* 机械组标题页的主图必须被限制在独立画布内，避免原图高度撑出页面并遮挡标题。 */

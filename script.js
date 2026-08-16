@@ -37,6 +37,9 @@ const sections = [...document.querySelectorAll('[data-section]')];
 const slides = [document.querySelector('.hero'), ...document.querySelectorAll('.section>.slide')];
 const navLinks = [...document.querySelectorAll('.nav a')];
 const progress = document.querySelector('.progress span');
+const heroIndex = document.querySelector('.hero-index');
+
+if (heroIndex) heroIndex.innerHTML = `01 <span>/</span> ${String(slides.length).padStart(2, '0')}`;
 
 const updateActiveNav = () => {
   const marker = window.scrollY + Math.min(window.innerHeight * 0.35, 260);
