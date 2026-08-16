@@ -577,3 +577,15 @@ body{scroll-snap-type:y mandatory}
   #tech>.slide>.prose p,#tech>.slide>.prose li,#tech>.slide:nth-child(4)>.prose p,#tech>.slide:nth-child(4)>.prose li,#tech>.slide:nth-child(5)>.prose p,#tech>.slide:nth-child(5)>.prose li{font-size:clamp(14px,3.8vw,17px)!important;line-height:1.4!important}
   #sharing>.slide>.prose p,#sharing>.slide>.prose li{font-size:clamp(14px,3.8vw,17px)!important;line-height:1.42!important}
 }
+
+/* 老队员分享：左侧标题略收敛，正文保持在右侧形成稳定的左右阅读路径。 */
+#sharing>.slide:has(>.subsection-head)>.subsection-head h3{font-size:clamp(44px,5.5vw,82px)!important}
+#sharing>.slide:nth-child(6){grid-template-columns:minmax(260px,.55fr) minmax(0,1.45fr)!important;column-gap:5vw}
+#sharing>.slide:nth-child(6)>.subsection-head{grid-column:1!important;grid-row:1!important}
+#sharing>.slide:nth-child(6)>.prose{grid-column:2!important;grid-row:1!important;max-width:none!important}
+
+@media(max-width:800px){
+  #sharing>.slide:has(>.subsection-head)>.subsection-head h3{font-size:clamp(38px,10vw,60px)!important}
+  #sharing>.slide:nth-child(6){display:flex!important;flex-direction:column;align-items:stretch;gap:18px}
+  #sharing>.slide:nth-child(6)>.subsection-head,#sharing>.slide:nth-child(6)>.prose{width:100%;max-width:none}
+}
