@@ -579,8 +579,8 @@ body{scroll-snap-type:y mandatory}
 }
 
 /* 老队员分享：左侧标题略收敛，正文保持在右侧形成稳定的左右阅读路径。 */
-#sharing>.slide:has(>.subsection-head)>.subsection-head h3{font-size:clamp(44px,5.5vw,82px)!important}
-#sharing>.slide:nth-child(6){grid-template-columns:minmax(260px,.55fr) minmax(0,1.45fr)!important;column-gap:5vw}
+#sharing>.slide:has(>.subsection-head)>.subsection-head h3{font-size:clamp(42px,4.6vw,70px)!important}
+#sharing>.slide:nth-child(6){grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:5vw}
 #sharing>.slide:nth-child(6)>.subsection-head{grid-column:1!important;grid-row:1!important}
 #sharing>.slide:nth-child(6)>.prose{grid-column:2!important;grid-row:1!important;max-width:none!important}
 
