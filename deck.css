@@ -472,8 +472,8 @@ body{scroll-snap-type:y mandatory}
 #robomaster>.slide:nth-child(3)>.intro-images{grid-column:1;grid-row:1;height:min(48svh,440px);max-height:48svh}
 #robomaster>.slide:nth-child(3)>.bullet-band{grid-column:2;grid-row:1;max-height:58svh;margin:0;overflow:hidden}
 #robomaster>.slide:nth-child(4){background:linear-gradient(90deg,rgba(7,11,16,.94),rgba(7,11,16,.56)),url('assets/image 3.webp') center/cover}
-#robomaster>.slide:nth-child(4){padding-top:72px;padding-bottom:16px}
-#robomaster>.slide:nth-child(4)>.text-panel{grid-template-columns:repeat(3,minmax(0,1fr));gap:3vw;margin-top:0;padding-top:24px;font-size:16px;line-height:1.55}
+#robomaster>.slide:nth-child(4){display:block;padding-top:72px;padding-bottom:16px}
+#robomaster>.slide:nth-child(4)>.text-panel{display:grid;width:100%;max-width:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:3vw;margin-top:0;padding-top:24px;font-size:16px;line-height:1.55}
 #robomaster>.slide:nth-child(4)>.text-panel p{margin:0}
 #robomaster>.slide:nth-child(5){display:block;padding:0;background:linear-gradient(90deg,rgba(7,11,16,.18),rgba(7,11,16,.06)),url('assets/rmuc_2026_field_top_view.webp') center/cover}
 
@@ -539,6 +539,9 @@ body{scroll-snap-type:y mandatory}
 #sharing>.slide>.prose p,#sharing>.slide>.prose li{font-size:clamp(15px,1.18vw,18px)!important;line-height:1.52!important}
 
 @media(max-width:800px){
+  #robomaster>.slide:nth-child(4){display:block;padding:78px 7vw 38px}
+  #robomaster>.slide:nth-child(4)>.text-panel{display:block;max-height:calc(100svh - 150px);overflow:hidden;padding-top:18px;font-size:15px;line-height:1.45}
+  #robomaster>.slide:nth-child(4)>.text-panel p{margin:0 0 14px}
   #tech>.slide{display:flex!important;flex-direction:column;align-items:stretch;gap:14px;padding:78px 7vw 38px}
   #tech>.slide>.section-head,#tech>.slide>.subsection-head,#tech>.slide>.prose,#tech>.slide>.hardware-layout,#tech>.slide>.content-image,#tech>.slide>.org,#tech>.slide>.bullet-band{width:100%;max-width:none;margin:0}
   #tech>.slide>.hardware-layout{display:flex!important;flex-direction:column;gap:14px}
