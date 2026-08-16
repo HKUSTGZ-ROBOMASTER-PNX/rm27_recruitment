@@ -797,6 +797,9 @@ body{background:#05090e}
 #lin-sharing>.lin-slide>.lin-media-slot{grid-column:2;grid-row:1;min-height:min(58svh,480px);border:1px dashed rgba(185,240,255,.28);background:linear-gradient(135deg,rgba(57,185,255,.06),rgba(255,255,255,.015));box-shadow:inset 0 0 34px rgba(57,185,255,.06),12px 12px 0 rgba(255,62,83,.12);position:relative;overflow:hidden}
 #lin-sharing>.lin-slide>.lin-media-slot:after{content:'';position:absolute;inset:15px;border:1px solid rgba(185,240,255,.12);background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(185,240,255,.04) 23px,transparent 24px);}
 #lin-sharing>.lin-slide--media>.lin-media-slot{grid-column:2;grid-row:1}
+#lin-sharing>.lin-slide>.lin-media-image{margin:0;padding:14px;display:grid;place-items:center;background:rgba(4,9,14,.72)}
+#lin-sharing>.lin-slide>.lin-media-image:after{inset:14px}
+#lin-sharing>.lin-slide>.lin-media-image img{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:saturate(.88) contrast(1.04)}
 #lin-sharing>.lin-slide--media>.lin-copy p:first-child strong{color:#fff}
 @media(max-width:800px){
   #lin-sharing>.lin-slide{display:flex!important;flex-direction:column;align-items:stretch;gap:18px;padding:78px 7vw 38px}
